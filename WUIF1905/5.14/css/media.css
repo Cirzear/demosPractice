@@ -1,0 +1,53 @@
+body{
+    background: rgba(113,114,129,0.49);
+}
+.outside{
+    height: auto;
+    margin: 0 auto;
+    background: #4cd964;
+}
+div[class='inside']{
+    width: 300px;
+    height: 300px;
+    float: left;
+    background-color: #34aadc;
+    border-radius: 50%;
+}
+
+@media screen and (max-width:768px){
+    .outside{
+        width: 50px;
+    }
+    div[class='inside']{
+        width: 50px;
+        height: 50px;
+    }
+}
+    @media screen and (min-width:768px){
+    .outside{
+        width: 200px;
+    }
+        div[class='inside']{
+            width: 100px;
+            height: 100px;
+        }
+}
+
+@media screen and (min-width:992px){
+    .outside{
+        width: 600px;
+    }
+    div[class='inside']{
+        width: 200px;
+        height: 200px;
+    }
+}
+@media screen and (min-width:1200px){
+    .outside{
+        width: 1200px;
+    }
+    div[class='inside']{
+        width: 300px;
+        height: 300px;
+    }
+}

@@ -1,0 +1,101 @@
+body,h1,h2,h3,h4,h5,h6,table,p,form,input,textarea,ol,ul,li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 微软雅黑 sans-serif;
+}
+/*去除浏览器自带格式*/
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+a:hover{
+    color:#00c1de;
+}
+/*slide 样式
+.slide{
+    width: 220px;
+    height: 41px;
+    margin: 0 0 10px;
+
+}
+.slide p{
+    line-height: 41px;
+    float: left;
+    z-index: 2;
+    position: relative;
+}
+.slide p:after{
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 2px;
+    background: #000;
+    left: 0;
+    bottom: 0;
+    -moz-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+.slide p:hover{
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.slide p:hover:after{
+    width: 80px;
+}
+
+
+
+*/
+/*
+图片样式
+ img{
+    width: 220px;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+.img_tab{
+    width: 220px;
+    height: 102px;
+    position: relative;
+
+}
+.trans_div p{
+    display: block;
+    width: 160px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+.rank_click_content a{
+    display: block;
+    position: relative;
+    width: 220px;
+    height: 100px;
+    top: 0;
+    left: -8px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.rank_click_content a:hover img{
+    transform: scale(1.1);
+}
+.rank_click_content a:hover .trans_div{
+    background: rgba(0,0,0,0.2);
+}
+.rank_click_content .trans_div{
+    width: 220px;
+    height: 102px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.6);
+    transition: all 0.5s;
+}
+*/

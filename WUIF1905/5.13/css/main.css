@@ -1,0 +1,45 @@
+/*body{*/
+/*    background-image: url("../images/timg.jpg");*/
+/*    background-repeat: repeat-x;*/
+/*}*/
+
+textarea{
+    resize: none;
+}
+
+ul{
+    width: 1000px;
+    height: 1000px;
+}
+li{
+    display: block;
+    float: left;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #C40000;
+}
+span{
+    display: block;
+    float: left;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #C40000;
+}
+p{
+    margin: 0;
+    padding: 0;
+    display: block;
+    float: left;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #C40000;
+}
+/*ul li:nth-child(2n+1){*/
+/*    border-top: 1px solid #4cd964;*/
+/*}*/
+/*li:nth-child(5) ~ li{*/
+/*    background-image: url("../images/timg.jpg");*/
+/*}*/
+span:last-of-type{
+    background-image: url("../images/timg.jpg");
+}

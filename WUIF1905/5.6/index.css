@@ -1,0 +1,11 @@
+img#img1{
+    width:200px;
+    height:200px;
+    border:2px solid #fff;
+}
+img#img1:hover{
+    border:2px solid #c40000;
+}
+a#backToTop{
+    float: right;
+}

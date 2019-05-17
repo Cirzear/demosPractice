@@ -1,0 +1,121 @@
+.banner{
+    width: 100%;
+    height: 6.8rem;
+    position: relative;
+    top: -1.7rem;
+    z-index: -1;
+}
+.banner img{
+    width: 100%;
+    height: 100%;
+
+
+
+}
+.downside{
+    width: 100%;
+    height: 6.5rem;
+    position: relative;
+    top: -1.7rem;
+}
+.downside_title{
+    position: relative;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 90%;
+    height: 0.6rem;
+    font-size: 0.32rem;
+    line-height: 1.9;
+    border-bottom:0.02rem solid rgba(0,0,0,0.05);
+    padding: 0.3rem 0.26rem 0.1rem 0.1rem;
+}
+
+.downside_title span{
+    display: inline-block;
+    position: relative;
+    left: 0.1rem;
+    color: #4ebbfe;
+}
+.downside_title span:before{
+    content: "";
+    display: block;
+    width: 0.1rem;
+    height: 0.05rem;
+    position: absolute;
+    left: -0.21rem;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #44b5ff;
+    box-shadow: 0px 2px 5px 0px
+    rgba(68, 181, 255, 0.43);
+    border-radius: 0.02rem;
+}
+.downside_title p{
+    display: inline-block;
+    color: #000;
+}
+.downside_content {
+    width: 100%;
+    height: 6.5rem;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.downside_content ul{
+    width: 100%;
+    height: 5.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    position: relative;
+    left: 0.5rem;
+}
+.downside_content li{
+    width: 100%;
+    height: 0.66rem;
+
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.downside_content p{
+    font-size: 0.22rem;
+    line-height: 1.2;
+    font-weight: bold;
+    height: 0.22rem;
+    width: 100%;
+    letter-spacing: 0.01rem;
+    font-stretch: expanded;
+    color: rgba(0,0,0,0.3);
+    margin-bottom: 0.14rem;
+}
+.downside_content .title{
+    font-size: 0.33rem;
+    font-weight: bold;
+    height: 0.33rem;
+    position: relative;
+    letter-spacing: 0.02rem;
+     color: rgba(0,0,0,0.6);
+
+ }
+.downside_content .title:before{
+    content: '';
+    display: block;
+    width: 0.08rem;
+    height: 0.08rem;
+    position: absolute;
+    left: -0.24rem;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: #37ce9a;
+    box-shadow: 0 0.02rem 0.05rem 0;
+    rgba(55, 206, 154, 0.43);
+}

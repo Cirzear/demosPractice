@@ -1,0 +1,99 @@
+.top{
+    height: 2rem;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 43px 0px
+    rgba(41, 167, 255, 0.13);
+}
+.top_title{
+    height: 0.88rem;
+    padding: 0.1rem 0 0;
+}
+.top_title p{
+    font-size: 0.38rem;
+    height: 0.38rem;
+    text-align: center;
+    color: #4ebbfe;
+    margin-top: 0.15rem;
+}
+.top_title img{
+    height: 0.42rem;
+    position: absolute;
+    left: 0.22rem;
+    top: 0.32rem;
+
+}
+.top_searchbox{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    height: 0.6rem;
+    padding: 0.1rem;
+}
+.top_searchbox span{
+    color: #36a8fe;
+    margin: 0 0 0.15rem;
+    font-size: 0.28rem;
+    line-height: 0.6rem;
+}
+#back_down{
+    margin: 0 0 0 0.1rem;
+    height: 0.2rem;
+}
+.top_searchbox img{
+    height: 0.6rem;
+}
+
+.search{
+    position: relative;
+    height: 0.6rem;
+
+}
+
+.search p{
+    height: 0.24rem;
+    font-size: 0.24rem;
+    color: #c8d9e6;
+    position: absolute;
+    top: 0.15rem;
+    left: 0.3rem;
+}
+
+
+#fdj{
+    width: 0.38rem;
+    height: 0.38rem;
+    position: absolute;
+    right: 0.2rem;
+    top: 0.1rem;
+}
+
+.bottom_tab{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 1rem;
+    background: #f1f9ff;
+}
+.bottom_tab ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.bottom_tab li{
+    position: relative;
+    top: 0.1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 1.5rem;
+}
+.bottom_tab img{
+    height: 0.5rem;
+}
+.bottom_tab span{
+    display: block;
+    position: absolute;
+    height: 0.24rem;
+    top: 0.5rem;
+    color: #59c3fe;
+}
