@@ -37,7 +37,7 @@
     height: 200px;
     position: relative;
 }
-.comment_tab #date{
+.comment_tab .date{
     float: right;
 
 }
