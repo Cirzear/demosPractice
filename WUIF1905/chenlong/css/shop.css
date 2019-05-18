@@ -1,0 +1,37 @@
+.content_right > h3{
+    font-weight: bold;
+}
+.firstline{
+    position: relative;
+    top: 0.1rem;
+}
+.firstline span{
+    font-size: 0.22rem;
+}
+.firstline > .num{
+    font-size: 0.26rem;
+    margin-right: 0.12rem;
+}
+.firstline span::before{
+    position: relative;
+    top: 0.2rem;
+}
+.zixun{
+    bottom: 0;
+    margin-left: 3.8rem;
+    width: 1rem;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 0.2rem;
+    height: 0.32rem;
+    padding: 0.1rem 0.2rem;
+    margin-top: 0.3rem;
+    text-align: center;
+    background-color: rgba(59,172,254,1);
+    border-radius: 0.26rem;
+}
+.middle > .radius_item > p{
+    height: 0.32rem;
+    font-size: 0.2rem;
+    padding: 0.1rem 0.3rem;
+}

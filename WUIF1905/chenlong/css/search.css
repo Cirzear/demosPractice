@@ -18,7 +18,7 @@
     width: 0.79rem;
     height: 0.44rem;
 }
-span{
+.text_line > span{
     height: 0.4rem;
     display: inline-block;
     position: relative;

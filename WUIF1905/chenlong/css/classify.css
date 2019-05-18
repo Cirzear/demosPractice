@@ -1,0 +1,105 @@
+
+body{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.08rem;
+}
+.top{
+    height: auto;
+}
+.top_title p::after{
+    content: '...';
+    position: absolute;
+    right: 0.2rem;
+    top: -0.3rem;
+    font-size: 0.8rem;
+    color: #36a8fe;
+
+}
+.middle{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    width: 80%;
+    margin-left: 0.8rem;
+    margin-top: 0.3rem;
+    margin-bottom: 0.2rem;
+}
+.radius_item{
+    display: block;
+}
+.middle .radius_item:last-child p{
+    color: #ffffff;
+    box-shadow: 0px 5px 12px 0px rgba(59, 172, 254, 0.43);
+    background-color: rgba(59,172,254,1);
+}
+
+.middle .radius_item p{
+    color: #3bacfe;
+    font-weight: bold;
+    font-size: 0.2rem;
+    height: 0.32rem;
+    letter-spacing: 0.01rem;
+    text-align: center;
+    padding: 0.16rem 0.46rem;
+    background-color: rgba(59,172,254,0.1);
+    border-radius: 0.26rem;
+}
+
+
+.classify{
+    width: 100%;
+    margin: 0.2rem 0;
+
+}
+.classify ul{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+.classify li{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.one_class{
+    text-align: center;
+}
+.one_class img{
+    width: 1.38rem;
+    height: 1.45rem;
+}
+.one_class  p{
+    color: #8e9397;
+}
+.content > a{
+    margin: 0;
+    padding: 0;
+}
+.content_right > .ps{
+    width: 100%;
+}
+.content_right > .ps > p{
+    width: auto;
+    position: relative;
+    top: 0.1rem;
+    font-weight: bold;
+    background: transparent;
+    color: rgba(0,0,0,0.3);
+}
+.content_right > .firstline{
+    margin-left: 0.1rem;
+    margin-top: -0.1rem;
+}
+.content_right > .icon-dianpu{
+    margin-left: 0.2rem;
+}
+
+.content_right .icon-dianpu{
+    color: #3bacfe;
+}
+.content_right .icon-dianpu b{
+    font-size: 0.2rem;
+    color: #cfcfcf;
+}
