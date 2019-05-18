@@ -1,2 +1,12 @@
-# wuif1905_practice_for_teacher_check
-this is a project that I practice for teacher to check
+# cirzear(陈龙)
+
+### 博客页面：
+
++ <https://cirzear.github.io/wuif1905_practice_for_teacher_check/WUIF1905/5.8/blog1>
+
+### o2o
+
+- <https://cirzear.github.io/wuif1905_practice_for_teacher_check/WUIF1905/chenlong>
+
+  
+
