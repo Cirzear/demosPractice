@@ -124,13 +124,14 @@
     height: 1.74rem;
 }
 .add_and_reduce{
+    margin-top: 0.3rem;
     display: flex;
     flex-wrap: nowrap;
 }
 .add_and_reduce_right{
     position: relative;
     left: 0.6rem;
-    top: 0.2rem;
+    top: 0.1rem;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -165,7 +166,7 @@
 }
 .good_price{
     position: relative;
-    top: -0.8rem;
+    top: -0.6rem;
     color: #8e9397;
 }
 .qx {
