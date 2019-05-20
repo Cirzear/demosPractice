@@ -7,15 +7,29 @@ body{
 .top{
     height: auto;
 }
-.top_title p::after{
-    content: '...';
+.top_title  .right_top_dots{
+    display: block;
+    width: 0.5rem;
+    height: 0.1rem;
     position: absolute;
-    right: 0.2rem;
-    top: -0.3rem;
-    font-size: 0.8rem;
-    color: #36a8fe;
-
+    top: 0.1rem;
+    right: 0.5rem;
 }
+.top_title .right_top_dots img{
+    float: left;
+    width: 0.43rem;
+    height: 0.08rem;
+}
+
+/*.top_title p::after{*/
+/*    content: '...';*/
+/*    position: absolute;*/
+/*    right: 0.2rem;*/
+/*    top: -0.3rem;*/
+/*    font-size: 0.8rem;*/
+/*    color: #36a8fe;*/
+
+/*}*/
 .middle{
     display: flex;
     flex-wrap: nowrap;
@@ -73,14 +87,14 @@ body{
 .one_class  p{
     color: #8e9397;
 }
-.content > a{
+.content  a{
     margin: 0;
     padding: 0;
 }
-.content_right > .ps{
+.content_right  .ps{
     width: 100%;
 }
-.content_right > .ps > p{
+.content_right  .ps  p{
     width: auto;
     position: relative;
     top: 0.1rem;

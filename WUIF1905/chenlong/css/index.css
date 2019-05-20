@@ -69,7 +69,8 @@
     justify-content: center;
     width: 1.88rem;
     color: #8e9397;
-
-
 }
 
+.middle ul a:nth-child(8) li{
+    width: 1.68rem;
+}
