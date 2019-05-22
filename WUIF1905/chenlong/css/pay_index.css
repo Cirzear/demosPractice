@@ -1,0 +1,95 @@
+.top{
+    height: 1rem;
+}
+.need_pay{
+    width: 100%;
+    height: auto;
+    padding: 0.4rem 0 0.66rem;
+    margin-bottom: 0.4rem;
+}
+.need_pay p{
+    display: block;
+    width: 3rem;
+    height: 0.3rem;
+    font-size: 0.26rem;
+    line-height: 0.4rem;
+    letter-spacing: 0.02rem;
+    color: #4f5b64;
+    position: relative;
+    right: 0;
+    left: 0;
+    margin:auto;
+}
+.need_pay span{
+    display: inline-block;
+    font-size: 0.4rem;
+    height: 0.29rem;
+    color: #32d796;
+
+    line-height: 0.4rem;
+}
+.pay_way ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.pay_way li{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.icon{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.icon img{
+    width: 1.06rem;
+    height: 1.06rem;
+}
+p{
+    font-weight: bold;
+    font-size: 0.28rem;
+    height: 0.27rem;
+    line-height: 0.54rem;
+    letter-spacing: 0.01rem;
+    color: #47505f;
+    position: relative;
+    bottom: 0.2rem;
+}
+.right_mes_tab{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-right: 0.1rem;
+}
+.right_mes_tab img{
+    width: 0.25rem;
+    height: 0.25rem;
+}
+.right_mes{
+    margin-right: 0.2rem;
+}
+.right_mes span{
+    font-size: 0.38rem;
+    height: 0.27rem;
+    line-height: 0.4rem;
+    letter-spacing: 0.02rem;
+    color: #ff7370;
+
+}
+.readyToPay{
+    width: 4.90rem;
+    height: 0.98rem;
+    position: relative;
+    right: 0;
+    left: 0;
+    margin:auto;
+}
+
+.readyToPay img{
+    width: 4.90rem;
+    height: 0.98rem;
+    margin-top: 0.5rem;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js生成金字塔</title>
+
+</head>
+<body>
+<button onclick = "sczj()">生成直角</button>
+<button onclick = "scjzt()">生成金字塔</button>
+<button onclick = "sclx()">生成菱形</button>
+
+
+
+
+<script>
+    function sczj() {
+        var rows = 6;
+        for(var i =1; i<=rows; i++ ){
+            for(var j = 0; j<2*i-1; j++){
+                document.write("*"+"&nbsp;");
+            }
+            document.write("<br>");
+        }
+    }
+
+    function scjzt() {
+       var rows = 6;
+       for (var i = 1; i<rows; i++){
+           for(var j=1;j<=rows-i; j++ ){
+               document.writeln("&nbsp;");
+           }
+           for (var k=1; k<=2*i-1; k++){
+               document.writeln("*");
+           }
+           document.writeln("<br>");
+       }
+    }
+    function sclx() {
+        var rows = 6;
+        for(var i=0;i<rows;i++){
+
+            for(var k= 1;k<rows-i;k++){
+                document.writeln("&nbsp;");
+            }
+            for(var j=1;j<=2*i-1;j++){
+                document.writeln("*");
+            }
+            document.writeln("<br/>");
+        }
+        for(var i=rows-2; i>0; i--){
+
+            for (var k=rows-i; k>1; k--){
+                document.writeln("&nbsp;");
+
+            }
+            for (var j=2*i-1; j>=1; j--){
+                document.writeln("*");
+
+            }
+            document.writeln("<br/>");
+
+        }
+
+    }
+</script>
+</body>
+</html>

@@ -1,17 +1,9 @@
-.banner{
+.banner {
     width: 100%;
     height: 6.8rem;
-    position: relative;
-    top: -1.7rem;
-    z-index: -1;
+    overflow: hidden;
 }
-.banner img{
-    width: 100%;
-    height: 100%;
 
-
-
-}
 .downside{
     width: 100%;
     height: 6.5rem;

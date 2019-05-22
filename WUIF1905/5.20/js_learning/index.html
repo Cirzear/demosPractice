@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function clicks(){
+            // var a =document.getElementById("numbers").childNodes[0].nodeValue
+            // a = 999
+            // document.getElementById("numbers").childNodes[0].nodeValue=a;
+            var a = "1"
+            var  b = "2"
+            a = ++a;
+            b = b++;
+            alert(a+","+b);
+            document.getElementById('numbers').innerText = a+b;
+        }
+        var res = document.getElementById('result_of_num').innerText;
+
+        function zs() {
+            var i =1;
+            for(i=1;i<=10;i++){
+              console.log(i);
+              res = i;
+              document.write(res+"<br>")
+            }
+
+        }
+        function oushu() {
+            var i =1;
+            for(i=1;i<=10;i++){
+                if(i%2==0) {
+                    console.log(i)
+                    res = i;
+                    document.write(res+"<br>")
+                }
+            }
+        }
+        function qh() {
+            var i = 1, sum = 0;
+            for (i =1; i<=10;i++){
+                sum = sum+i;
+
+            }
+            console.log(sum);
+            res = sum;
+            document.write(res+"<br>")
+        }
+
+        function sczj() {
+            for(var i =1; i<=6; i++ ){
+                for(var j = 0; j<2*i-1; j++){
+                    document.write("*");
+                }
+                document.write("<br>");
+            }
+        }
+        function scjzt() {
+            var rows = 5;
+            for(var i=0; i<rows; i++) {
+
+                for(var j=i; j<rows-1;j++ ){
+                    document.write("#");
+                }
+
+                for(var k=i; k<2*k-1; k++){
+                    document.write("*");
+                }
+
+                document.write("<br>");
+            }
+
+        }
+        function sclx() {
+            var rows = 5;
+            for(var i=0; i<rows; i++) {
+
+                for(var j=i; j<rows-1;j++ ){
+                    document.write("#");
+                }
+
+                for(var k=i; k<2*k-1; k++){
+                    document.write("*");
+                }
+
+                document.write("<br>");
+            }
+            for (i=rows; i>0;i-- ){
+                for(var j=rows-1; j>i;j-- ){
+                    document.write("#");
+                }
+
+                for(var k=2*k-1; k>i; k--){
+                    document.write("*");
+                }
+
+                document.write("<br>");
+            }
+
+
+        }
+
+
+
+    </script>
+</head>
+<body>
+    <span id = "numbers">123</span>
+<button onclick="clicks()">
+    点击变数
+</button>
+    <br>
+    <br>
+
+
+    <button onclick = "zs()">整数</button>
+    <button onclick = "oushu()">偶数</button>
+    <button onclick = "qh()">求和</button>
+
+    <p id = "result_of_num" >165</p>
+
+    <br>
+
+    <button onclick = "sczj()">生成直角</button>
+    <button onclick = "scjzt()">生成金字塔</button>
+    <button onclick = "sclx()">生成菱形</button>
+
+
+</body>
+</html>

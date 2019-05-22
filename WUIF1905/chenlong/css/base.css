@@ -6,6 +6,10 @@ body,h1,h2,h3,h4,h5,h6,table,p,form,input,textarea,ol,ul,li{
     list-style: none;
     font-family: sans-serif;
 }
+body{
+    margin-top: 2rem;
+    overflow-x:hidden;
+}
 /*去除浏览器自带格式*/
 a{
     text-decoration: none;
