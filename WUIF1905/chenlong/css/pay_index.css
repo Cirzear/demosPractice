@@ -93,3 +93,31 @@ p{
     height: 0.98rem;
     margin-top: 0.5rem;
 }
+.need_pay p::before{
+    content: "";
+    display: block;
+    width: 0.1rem;
+    height: 0.05rem;
+    position: relative;
+    left: 42%;
+    top: 0.3rem;
+    margin: auto;
+    background:#34da87;
+    box-shadow: 0px 2px 5px 0px
+    rgba(52,218,135,0.51);
+    border-radius: 0.02rem;
+}
+.need_pay p::after{
+    content: "";
+    display: block;
+    width: 0.1rem;
+    height: 0.05rem;
+    position: relative;
+    right: 56%;
+    bottom: 0.2rem;
+    margin: auto;
+    background: #34da87;
+    box-shadow: 0px 2px 5px 0px
+    rgba(52,218,135,0.51);
+    border-radius: 0.02rem;
+}

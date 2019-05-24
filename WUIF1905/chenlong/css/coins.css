@@ -1,0 +1,29 @@
+.top{
+    height: 1rem;
+}
+.body_image{
+    width: 80%;
+    height: auto;
+    position: relative;
+    right: 0;
+    left: 0;
+    top: 0.79rem;
+    margin: auto;
+}
+.body_image img{
+    width: 100%;
+
+}
+.body_image p{
+    width: 1rem;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 52%;
+    margin: auto;
+    font-weight: bold;
+    color: #525f67;
+    font-size: 0.46rem;
+    height: 0.4rem;
+    letter-spacing: 0.02rem;
+}

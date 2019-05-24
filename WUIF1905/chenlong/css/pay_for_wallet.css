@@ -1,0 +1,129 @@
+body{
+    margin-top: 1.31rem;
+}
+.pay_money_box{
+    width: 100%;
+    height: auto;
+}
+.pay_money_box ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    right: 0;
+    left: 0;
+    margin: auto;
+    padding: 0 0  0.55rem 0;
+    border-bottom: 1px solid rgba(0,0,0,0.04);
+}
+.pay_money_box li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 2.17rem;
+    height: 1.08rem;
+    margin: 0.2rem 0;
+    border-radius: 0.1rem;
+    background: #e7f6ff;
+    position: relative;
+
+}
+.pay_money_box .up_line{
+    display: flex;
+
+    margin-bottom: 0.1rem;
+    margin-top: 0.2rem;
+
+}
+.pay_money_box .down_line{
+    display: flex;
+    height: 0.19rem;
+}
+.pay_money_box > ul > a > li > .up_line > span{
+    font-size: 0.4rem;
+    height: 0.29rem;
+    line-height: 0.4rem;
+    font-weight: bold;
+    color: #3bacfe;
+}
+.pay_money_box > ul > a > li > .up_line > p {
+    font-size: 0.3rem;
+    height: 0.27rem;
+    color: rgba(59,172,254,0.51);
+}
+.pay_money_box > ul > a > li > .down_line > span{
+    font-size: 0.28rem;
+    height: 0.20rem;
+    line-height: 0.4rem;
+    font-weight: bold;
+    color: #3bacfe;
+}
+.pay_money_box > ul > a > li > .down_line > p{
+    font-size: 0.20rem;
+    height: 0.19rem;
+    line-height: 0.4rem;
+    letter-spacing: 0.01rem;
+    color: rgba(59,172,254,0.51);
+}
+.pay_money_box a:nth-child(2) li{
+    background-color: #3bacfe;
+    box-shadow: 0 0.05rem 0.12rem 0
+    rgba(59, 172, 254, 0.43);
+    border-radius: 0.08rem;
+}
+.pay_money_box a:nth-child(2) > li > div > span{
+    color: #FFFFFF;
+}
+.pay_money_box a:nth-child(2) > li > div > p{
+    color: #FFFFFF;
+}
+.up_line .icon-guanjun{
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 0.5rem!important;
+    color: #ffe535!important;
+}
+.pay_money_box > ul > a > p{
+   font-size: 0.2rem;
+    letter-spacing: 0.01rem;
+    color: #97c6e9;
+    margin-left: 0.5rem;
+}
+
+.sure_to_pay {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    position: relative;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+.input_tab{
+    width: 60%;
+}
+.diy_input{
+    width:100%;
+    height: 0.7rem;
+    background: rgba(231,246,255,0.51);
+    border: 2px solid rgba(194,226,249,0.2);
+    outline: transparent;
+    padding: 0 0 0 0.25rem;
+
+}
+.diy_input::-webkit-input-placeholder{
+    color: #97c6e9;
+}
+.sure_input {
+    font-size: 0.2rem;
+    color: #FFFFFF;
+    width: 1.96rem;
+    height: 0.6rem;
+    background-image: linear-gradient(90deg, #37e06f 0%, #31d69a 100%);
+    box-shadow: 0 0.04rem 0.2rem rgba(55, 223, 116, 0.75);
+    border-radius: 0.3rem;
+    border: 0 solid transparent;
+}
