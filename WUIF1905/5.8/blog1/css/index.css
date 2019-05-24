@@ -721,7 +721,6 @@ ul.list{
 }
 .special_content_ul li img{
     height: 100px;
-    padding: 8px 16px;
     transition: all 0.5s;
 }
 .special_content_ul h2{
@@ -744,8 +743,13 @@ ul.list{
 .special_content_ul a{
     display: block;
     margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
     color: #009966;
     font-size: 15px;
+    height: 100px;
+    overflow: hidden;
+    width: 216px;
 }
 .special_content_ul .readmore::before{
     content: '+';
