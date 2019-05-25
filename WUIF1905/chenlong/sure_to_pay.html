@@ -1,17 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <title>店铺</title>
+    <title>确认充值</title>
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/top.css">
     <link rel="stylesheet" href="./css/pay_index.css">
+    <style>
+        .need_pay p{
+            width:2.1rem;
+        }
+        .need_pay p:before{
+            top: 0.28rem;
+        }
+        .need_pay p:after{
+            bottom: 0.28rem;
+        }
+        .readyToPay{
+            position: fixed;
+            bottom: 3rem;
+        }
+    </style>
 </head>
 <body>
 <div class = "top">
     <div class = "top_title">
-        <p>支付</p>
+        <p>确认充值</p>
         <a href="shoppinglist.html">
             <img src="./images/part1/Back.png" alt="1024">
         </a>
@@ -19,33 +34,19 @@
 </div>
 <div class = "middle">
     <div class = "need_pay">
-        <p>需支付<span>￥30</span>元定金</p>
+        <p>充值<span>￥30</span>元</p>
     </div>
     <div class = "pay_way">
         <ul>
-            <li>
-                <div class = "icon">
-                    <img src="./images/part2/walleticon.png" alt="钱包">
-                    <p>我的钱包</p>
-                </div>
-                <div class ="right_mes_tab">
-                <div class = "right_mes">
-                    <p>余额 <span>602</span>元</p>
-                </div>
-                <div class = "select_or_not">
-                    <img src="./images/part2/bluecircle.png" alt="1024">
-                </div>
-                </div>
-            </li>
             <li>
                 <div class = "icon">
                     <img src="./images/part2/wxicon.png" alt="微信">
                     <p>微信支付</p>
                 </div>
                 <div class ="right_mes_tab">
-                <div class = "select_or_not">
-                    <img src="./images/part2/darkcircle.png" alt="1024">
-                </div>
+                    <div class = "select_or_not">
+                        <img src="./images/part2/bluecircle.png" alt="1024">
+                    </div>
                 </div>
             </li>
         </ul>
@@ -54,6 +55,5 @@
         <img src="./images/part2/qrzf.png" alt="确认支付">
     </div>
 </div>
-
 </body>
 </html>

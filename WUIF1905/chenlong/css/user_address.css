@@ -1,0 +1,119 @@
+body{
+    margin-top: 1.6rem;
+}
+.top{
+    height: 1rem;
+}
+
+.address_tab{
+    width: 100%;
+    height: auto;
+}
+.address_tab ul{
+    width: 94%;
+    position: relative;
+    right: 0;
+    left: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.address_tab li{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.6rem;
+}
+.up_tab{
+    width: 100%;
+    height: 1.62rem;
+    display: flex;
+    flex-wrap: nowrap;
+    border-radius: 0.1rem;
+    background: rgba(231,246,255,0.6);
+}
+.up_tab p{
+    font-weight: bold;
+    font-size: 0.24rem;
+    letter-spacing: 0.01rem;
+    color: #3bacfe;
+}
+.up_tab .address_detail{
+    font-size: 0.22rem;
+    color: rgba(0,0,0,0.5);
+}
+.up_tab_left{
+    width: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.up_tab_left p{
+    position: relative;
+    top: -10%;
+}
+.up_tab_right{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+}
+.down_tab{
+    position: relative;
+    top: 0.2rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.down_tab_left{
+    width: 1.6rem ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.down_tab_left span{
+    display: inline-block;
+    font-size: 0.22rem;
+    letter-spacing: 0.01rem;
+    color: #36a8fe;
+}
+.down_tab_right{
+    width: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.down_tab img{
+    width: 0.3rem;
+    height: 0.3rem;
+}
+
+.select_or_not {
+    width: 0.24rem;
+    height: 0.24rem;
+    overflow: hidden;
+    position: relative;
+    left: 0.05rem;
+}
+.select_or_not img{
+    width: 0.24rem;
+    height: 0.24rem;
+    position: absolute;
+}
+.select_light{
+    display: none;
+}
+.hot{
+    display: block;
+    z-index: 1;
+}
+.bottom_button{
+    position: fixed;
+    top: unset;
+    bottom: 0.5rem;
+}

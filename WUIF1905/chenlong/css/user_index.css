@@ -1,3 +1,6 @@
+body{
+    margin-top: 1.6rem;
+}
 .top{
     height: 1rem;
 }
@@ -57,6 +60,7 @@
 .firstline p{
     margin: 0.05rem 0;
     color: #3bacfe;
+    font-size: 0.20rem;
     padding: 0 0.23rem 0 0 ;
 }
 .firstline img{
@@ -67,6 +71,12 @@
 }
 
 .icon-zuanshihuiyuan{
+    font-size:0.3rem;
+    color: #FFE44F;
+    text-shadow: 0px 4px 9px 0px rgba(255, 228, 79, 0.75);
+}
+
+.icon-huangjinhuiyuan{
     font-size:0.3rem;
     color: #FFE44F;
     text-shadow: 0px 4px 9px 0px rgba(255, 228, 79, 0.75);
