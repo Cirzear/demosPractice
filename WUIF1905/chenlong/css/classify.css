@@ -44,10 +44,10 @@ body{
 .radius_item{
     display: block;
 }
-.middle .radius_item:last-child p{
-    color: #ffffff;
+.hot p{
+    color: #ffffff!important;
     box-shadow: 0px 5px 12px 0px rgba(59, 172, 254, 0.43);
-    background-color: rgba(59,172,254,1);
+    background-color: rgba(59,172,254,1)!important;
 }
 
 .middle .radius_item p{

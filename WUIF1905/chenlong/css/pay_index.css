@@ -7,20 +7,22 @@
     padding: 0.4rem 0 0.66rem;
     margin-bottom: 0.4rem;
 }
-.need_pay p{
+.need_pay_p{
     display: block;
     width: 3rem;
-    height: 0.3rem;
-    font-size: 0.26rem;
-    line-height: 0.4rem;
-    letter-spacing: 0.02rem;
-    color: #4f5b64;
     position: relative;
     right: 0;
     left: 0;
     margin:auto;
 }
-.need_pay span{
+.need_pay_p p{
+    font-size: 0.26rem;
+    line-height: 0.4rem;
+    letter-spacing: 0.02rem;
+    color: #4f5b64;
+
+}
+.need_pay_p span{
     display: inline-block;
     font-size: 0.4rem;
     height: 0.29rem;
@@ -93,7 +95,7 @@
     height: 0.98rem;
     margin-top: 0.5rem;
 }
-.need_pay p::before{
+.need_pay_p p::before{
     content: "";
     display: block;
     width: 0.1rem;
@@ -107,17 +109,32 @@
     rgba(52,218,135,0.51);
     border-radius: 0.02rem;
 }
-.need_pay p::after{
+.need_pay_p p::after{
     content: "";
     display: block;
     width: 0.1rem;
     height: 0.05rem;
     position: relative;
     right: 56%;
-    bottom: 0.2rem;
+    bottom: 0.26rem;
     margin: auto;
     background: #34da87;
     box-shadow: 0px 2px 5px 0px
     rgba(52,218,135,0.51);
     border-radius: 0.02rem;
+}
+.select_or_not {
+    width: 0.25rem;
+    height: 0.25rem;
+    top: -0.06rem;
+}
+.middle{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width:98%;
+    position: relative;
+    right: 0;
+    left: 0;
+    margin: auto;
 }

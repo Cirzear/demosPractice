@@ -1,0 +1,82 @@
+.middle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.middle_top_img{
+    width: 1.08rem;
+    height: 0.81rem;
+}
+.middle_top_img img{
+    width: 1.08rem;
+    height: 0.81rem;
+}
+.need_pay{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.need_pay_p{
+    width: 3.2rem;
+}
+.need_pay_p p:before{
+    left: 50%;
+}
+.need_pay_p2{
+    margin-top: 0.2rem;
+}
+.buttons{
+    width: 70%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.buttons .a_button{
+
+}
+.a_button p{
+    line-height: 0.2rem;
+    height: 0.19rem;
+    font-size: 0.2rem;
+    letter-spacing: 0.01rem;
+    color: #FFFFFF;
+    padding: 0.2rem 0.56rem;
+    background-blend-mode: normal, normal;
+    border-radius: 0.3rem;
+}
+.green p{
+    background-color:#37e06f;
+    box-shadow: 0px 4px 20px 0px rgba(55, 223, 116, 0.75);
+
+}
+.blue p{
+    background-color: #3bacfe;
+    box-shadow: 0px 5px 12px 0px rgba(59, 172, 254, 0.43);
+}
+.content ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.content li{
+    width: 3.25rem;
+    height: auto;
+    flex-direction: column;
+}
+.content .left_img{
+    padding: 0.15rem 1rem 0.44rem 0.72rem;
+
+}
+.left_img img{
+    width: 1.53rem;
+    height: 1.56rem;
+}
+.content_first{
+    margin-top: 0.62rem;
+    height: 0.7rem;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}

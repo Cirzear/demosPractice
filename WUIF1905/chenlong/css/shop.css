@@ -40,3 +40,10 @@
     font-size: 0.2rem;
     padding: 0.1rem 0.3rem;
 }
+.left_img{
+    width: 1.74rem;
+    height: 1.74rem;
+    float: left;
+    border-radius: 0.1rem;
+    overflow: hidden;
+}

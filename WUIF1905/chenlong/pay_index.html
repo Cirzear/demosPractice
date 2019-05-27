@@ -6,6 +6,7 @@
     <title>店铺</title>
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/top.css">
+    <link rel="stylesheet" href="./css/shoppinglist.css">
     <link rel="stylesheet" href="./css/pay_index.css">
 </head>
 <body>
@@ -19,8 +20,10 @@
 </div>
 <div class = "middle">
     <div class = "need_pay">
+        <div class = "need_pay_p">
         <p>需支付<span>￥30</span>元定金</p>
-    </div>
+        </div>
+        </div>
     <div class = "pay_way">
         <ul>
             <li>
@@ -32,9 +35,10 @@
                 <div class = "right_mes">
                     <p>余额 <span>602</span>元</p>
                 </div>
-                <div class = "select_or_not">
-                    <img src="./images/part2/bluecircle.png" alt="1024">
-                </div>
+                    <div class = "select_or_not">
+                        <img class="select_light hot" src="./images/part2/bluecircle.png" alt="1024">
+                        <img class="select_dark" src="./images/part2/darkcircle.png" alt="1024">
+                    </div>
                 </div>
             </li>
             <li>
@@ -43,15 +47,18 @@
                     <p>微信支付</p>
                 </div>
                 <div class ="right_mes_tab">
-                <div class = "select_or_not">
-                    <img src="./images/part2/darkcircle.png" alt="1024">
-                </div>
+                    <div class = "select_or_not">
+                        <img class="select_light" src="./images/part2/bluecircle.png" alt="1024">
+                        <img class="select_dark" src="./images/part2/darkcircle.png" alt="1024">
+                    </div>
                 </div>
             </li>
         </ul>
     </div>
     <div class = "readyToPay">
+        <a href="">
         <img src="./images/part2/qrzf.png" alt="确认支付">
+        </a>
     </div>
 </div>
 
