@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [2,5,7,8,6,3,41,7];
+   function Person(name,age,sex) {
+       this.name = name;
+       this.age = age;
+       this.sex = sex;
+   }
+   Person.prototype = {
+       play:function () {
+           document.write("我正在和"+this.age+"岁的"+this.sex+this.name+"一起DeepDark呢！"+"<br>")
+       }
+   }
+    Person.prototype.say = function () {
+        document.write("hello,world!"+"<br>")
+    }
+
+    function Student() {
+        this.classes = "WUIF1905";
+        this.number = '1614011446';
+
+    }
+    Student.prototype =new Person('啊啊',10,'女孩');
+
+
+
+   Student.prototype.say = function () {
+           document.write('fuck u!'+"<br>")
+       }
+
+
+    let cl = new Person('陈龙',18,'猛男');
+    let cl2 =new Student();
+
+
+    cl.say();
+    cl.play();
+
+    cl2.say();
+    cl2.play();
+
+    console.log(cl2.name);
+    console.log(cl2.number);
+
+
+
+
+
+
+</script>
+</body>
+</html>

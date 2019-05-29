@@ -4,7 +4,7 @@ const b =[];
 // mvalue(ex,'>');
 // mvalue(ex,'<');
 
-redefi(a,b);
+
 
 function mvalue(arr,type) {
     if(type === "<"){
@@ -39,16 +39,22 @@ var min =arr[0];
 
     } document.write("最小值为："+min+"<br>");
 }
-function redefi(arr1, arr2) {
-    for (var i = arr1.length-1;i>0;i--){
-        for (var j =0; j<arr1.length; j++){
-            arr2[j] = arr1[i];
 
-        }
 
+unshiftArrs(a,'s','d','f');
+function unshiftArrs(arr) {
+    var newarr =[];
+    for (var i =0;i<arr.length;i++) {
+        newarr[i] = arr[i];
     }
-    for (var k =0; k<arr2.length; k++){
-        arr1.push(arr2[k]);
+    arr.length = 0;
+
+    for (var i =1; i<arguments.length;i++){
+        arr.push(arguments[i]);
     }
-    document.write(arr1);
+    for (var i = 0; i<newarr.length;i++){
+        arr.push(newarr[i]);
+    }
+    document.write(arr);
+
 }

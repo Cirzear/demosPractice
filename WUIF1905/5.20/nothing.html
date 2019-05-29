@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+    function myArr() {
+        for (let i =0; i<arguments.length;i++){
+            this[i] = arguments[i];
+        }
+
+        this.length = arguments.length;
+
+        this.pushA = function(){
+
+            for (let i = 0; i < arguments.length; i++) {
+                this[this.length+i]=arguments[i];
+
+            }
+            this.length += arguments.length
+        }
+
+        this.search_max = function () {
+            let max = 0;
+            for (let i =0; i<this.length;i++){
+                if ( max < this[i]){
+                    max = this[i]
+                }
+            } return max;
+        }
+
+        this.firstLocation = function (value) {
+
+            for (let i =0;i<this.length;i++){
+                if(value === this[i] ){
+                    return i+1;
+                    break;
+                }
+
+            }
+
+        }
+
+        this.lastLocation = function (value) {
+
+            for (let i =this.length;i>=0;i--){
+                if(value === this[i] ){
+
+                    return this.length-i+1;
+                    break;
+                }
+
+            }
+
+        }
+
+
+        this.map = function (callback) {   // 进行数组的回调
+            let newarray = new myArr();
+            for (let i =0; i<this.length;i++){
+                newarray.pushA(callback(this[i]));
+            }
+            return newarray;
+        }
+
+        this.filter =function (callback) {  //筛选出数组中符合特定条件的数
+            let newarray =new myArr();
+            for (let i =0; i<this.length ;i++){
+                if(callback(this[i])){
+                    newarray.pushA(this[i]);
+                }
+            }return newarray;
+        }
+
+
+        this.some =function (callback) {    //判断数组中是否存在某个数满足某个条件
+            let flag =false;
+            for (let i =0; i<this.length ;i++){
+                if(callback(this[i])){
+                    flag =true;
+                    break;
+                }
+            }
+            return flag;
+        }
+
+    }
+
+    let arr = new myArr(1,3,5,6,80,2);
+
+    let arr1=arr.map(function (value){
+        return value *2;
+    })
+    let arr2=arr.filter(function (value){
+        return value % 2 == 0;
+    })
+    let arr3=arr.some(function (value){
+        // if(value > 20){
+        //     return value;
+        // }
+        // else
+        //     return false;
+        return value >20;
+    })
+
+    arr.pushA(8,88,45,11111,655);
+    console.log(arr.search_max());;
+    console.log(arr.firstLocation(45));
+    console.log(arr.lastLocation(88));
+    console.log(arr);
+    console.log(arr1);
+    console.log(arr2);
+    console.log(arr3);
+
+</script>
+
+
+
+</body>
+</html>

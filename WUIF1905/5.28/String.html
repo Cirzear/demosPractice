@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+
+    let str2 = '  abcd  ';
+
+    let str1 ='abcdefghighlmnooooopqrstuvwxyz';
+
+    let str3 ='abc.fff.png'
+
+    let str4 = "abcd";
+    let str5 =  'abc';
+
+
+    function compare(a,b){   //比较两个字符串大小
+        if(a>b){
+            return a+">"+b
+        }else{
+            return b+">"+a
+        }
+
+    }
+
+    console.log(compare(str4, str5));
+
+    function getafterpoint(str) {     //得到点之后的字符
+        if(typeof str != "string"){
+            return "请输入字符串"
+        }
+        let index = str.lastIndexOf('.');
+        return str.substring(index +1);
+    }
+
+    console.log(getafterpoint(str3));
+
+    function spaceout(str){  //除去空格数
+         if(typeof str != "string"){
+            return "请输入字符串"
+        }
+        let str1 =[];
+    let index =0;
+        for(let i=0; i<str.length;i++){
+            while(str[i] != " "){
+                str1.push(str[i]);
+                index++;
+                break;
+            }
+        }
+        console.log(index);
+    }
+
+
+    spaceout(str2);
+
+    console.log(str1.includes('mno'));   //字符串中是否存在某个字符
+
+
+    for(let i= 0;i<str1.length;i++){
+
+    str1 =str1.charAt(0).toUpperCase()+str1.slice(1);
+        console.log(str1);
+    }
+
+    console.log(str1.replace(/gh/g, 123)); //替换某个字符串
+
+
+
+    function reverse(str) { //翻转字符串
+        if(typeof str != "string"){
+            return "请输入字符串"
+        }
+        let str2 = [];
+        for (let i=str.length-1;i>=0;i--){
+
+            str2[str.length-i-1] = str[i];
+
+        }
+        console.log(str2);
+    }
+    reverse(str1);
+
+    function locationofshow(str,a) { //出现的位置
+        if(typeof str != "string"){
+            return "请输入字符串"
+        }
+        let str2 =[];
+        for (let i =0;i<str.length;i++){
+            while (a == str[i]){
+                str2.push(i+1);
+                break;
+            }
+        }
+        console.log(str2);
+
+    }
+    locationofshow(str1,'o')
+
+    function numbersofshow(str,a) {  //某个字符出现的次数
+        if(typeof str != "string"){
+            return "请输入字符串"
+        }
+        let index =0;
+        for (let i =0;i<str.length;i++){
+            while (a == str[i]){
+                index++;
+                break;
+            }
+        }
+        console.log(index);
+    }
+    numbersofshow(str1,'o')
+        
+    
+    //老师的方法
+    
+    function charCount(str) {
+        let obj ={}
+        for( let i =0; i<str.length;i++){
+            let char = str[i];
+
+            obj[char] ? obj[char]++ :obj[char] =1;
+            console.log(obj);
+        }
+
+        return obj;
+    }
+
+    console.log(charCount(str3));
+
+
+
+    function charPoss(str,fStr) {   //某字符串出现的位置
+        let rStr = '*'.repeat(fStr.length);
+        console.log(rStr);
+        let newarr = [];
+        while(str.indexOf(fStr)!=-1) {
+            newarr.push(str.indexOf(fStr));
+            str = str.replace(fStr,rStr);
+        }
+        console.log(str);
+        return newarr;
+
+    }
+    console.log(charPoss(str1,'bcde'));
+
+</script>
+</body>
+</html>

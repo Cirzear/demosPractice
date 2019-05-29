@@ -7,7 +7,7 @@ body{
 .bottom_tab img{
     opacity: 0.4;
 }
-.bottom_tab a:nth-child(5) img{
+.bottom_tab .hot img{
     opacity: 1;
 }
 .user_back_dots{

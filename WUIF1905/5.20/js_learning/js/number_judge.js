@@ -4,7 +4,7 @@ const arr2 = [123,1651,-1,189]
 
 const arr3 = [1,2,3,4,5,6,7,8]
 
-const arr4 = [1,17,31,13,16,684,18]
+const arr4 = [1,17,31,13,16,684,18,16,16]
 
 const arr5 =[1,5,8,4,1,3,88,11,3,4,64]
 
@@ -45,7 +45,7 @@ function chuxcs() {
             j++;
         }
     }
-    document.write("出现"+j+"次");
+    document.write(input_num+"出现"+j+"次");
 }
 function small_to_big() {
     var temp = 0;

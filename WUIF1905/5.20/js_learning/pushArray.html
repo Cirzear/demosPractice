@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+
+
+
+<script>
+
+    function myArr() {
+        for (let i =0; i<arguments.length;i++){
+            this[i] = arguments[i];
+        }
+
+        this.length = arguments.length;
+
+        this.pushA = function(){
+
+            for (let i = 0; i < arguments.length; i++) {
+                this[this.length+i]=arguments[i];
+
+            }
+            this.length += arguments.length
+        }
+
+        this.search_max = function () {
+            let max = 0;
+            for (let i =0; i<this.length;i++){
+                if ( max < this[i]){
+                    max = this[i]
+                }
+            } return max;
+        }
+
+        this.firstLocation = function (value) {
+
+            for (let i =0;i<this.length;i++){
+                if(value === this[i] ){
+                    return i+1;
+                    break;
+                }
+
+            }
+
+        }
+
+        this.lastLocation = function (value) {
+
+            for (let i =this.length;i>=0;i--){
+                if(value === this[i] ){
+
+                    return this.length-i+1;
+                    break;
+                }
+
+            }
+
+        }
+
+
+    }
+
+    let arr = new myArr(1,3,5);
+
+    arr.pushA(8,88,45,11111,655);
+    console.log(arr.search_max());;
+    console.log(arr.firstLocation(45));
+    console.log(arr.lastLocation(88));
+    console.log(arr);
+</script>
+</body>
+</html>

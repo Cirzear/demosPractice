@@ -124,3 +124,9 @@ body{
     font-size: 0.2rem;
     color: #cfcfcf;
 }
+.bottom_tab img{
+    opacity: 0.4;
+}
+.bottom_tab .hot img{
+    opacity: 1;
+}
