@@ -9,7 +9,6 @@
         }
         body{
             border-radius: 50%;
-            border: 1px solid #c40000;
             width: 600px;
             height: 600px;
             position: relative;
@@ -54,59 +53,46 @@ function RandomTops(){
 }
 
 //下面的style.cssText中等号后面是esc键下面的符号不是单引号@！！！！！！！！
-let number = 360;
 
-let n = 36;
 
-let ang = 2 / n * Math.PI;
+let n = 36; //一圈的个数
+let number = 6*n; //圆圈的总个数
+let ang = 2 / n * Math.PI; // 把360度等分，要与下面的rad联系起来理解
 
-let r = 300;
+let times = 100;
+
+let r = 200;
 
 window.onload=function () {
     for(let i =0;i<number;i++){
-        let rad = ang * i;
+        if (i % n ==0 && i != 0){
+                    r　+= 20;
+                    times+=100;
+                }
+        let rad = ang * i;              //度数
         let lefts = r * Math.cos(rad);
         let tops = r *Math.sin(rad);
         let w = RandomSize();
         let divs = document.createElement('div');
-        divs.style.cssText = `width:${w}px;height:${w}px;
+        divs.style.cssText = `width:20px;height:20px;
         background: radial-gradient(circle, ${RandomColor()},${RandomColor()}, ${RandomColor()});
         border-radius:50%;position:absolute;
         left:50%;top:50%;opacity:0;`
         document.body.appendChild(divs);
 
 
+        (function(times){
+            let t = setTimeout(function () {
+                divs.style.transitionDelay=times*10+'ms';
+                divs.style.opacity = 1;
+                divs.style.left = lefts + 270 + 'px';
+                divs.style.top = tops + 270 + 'px';
+                // divs.style.left = (600-Math.sin(1/45)*300)+Math.sin(lefts/45)*300-320+"px"
+                // divs.style.top = (600-Math.cos(1/45)*300)+Math.cos(lefts/45)*300-50+"px";
+                clearTimeout(t);
+            },1000)
 
-        // let number = 360;
-        //
-        // let n = 36;
-        //
-        // let ang = 2 / n * Math.PI;
-        //
-        //
-        // for(let i =0; i < number; i++){
-        //     if (i % n ==0 && i != 0){
-        //         r　+= 30;
-        //     }
-        //
-        //     let rad = ang * i;
-        //     let lefts = r * Math.cos(rad);
-        //     let tops = r *Math.sin(rad);
-        //     let circle = document.createElement('div');
-        //     circle.classList.add('circle');
-        //     document.body.appendChild(circle);
-        // }
-
-        let t =setTimeout(function () {
-
-            divs.style.transitionDelay=i*10+'ms';
-            divs.style.opacity = 1;
-            divs.style.left = lefts + 280 + 'px';
-            divs.style.top = tops + 250 + 'px';
-            // divs.style.left = (600-Math.sin(1/45)*300)+Math.sin(lefts/45)*300-320+"px"
-            // divs.style.top = (600-Math.cos(1/45)*300)+Math.cos(lefts/45)*300-50+"px";
-            clearTimeout(t);
-        },1000)
+        }(times))
     }
 }
 
