@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            transition: all ease 1s;
+        }
+
+        body {
+            width: 600px;
+            height: 600px;
+            border-radius: 50%;
+            border: 1px solid black;
+            position: relative;
+            left: 0;
+            right: 0;
+            top: 100px;
+            margin: auto;
+        }
+
+    </style>
+</head>
+<body>
+
+<script>
+
+
+    for (let i = 1; i < 100; i++) {
+        let  left =f();
+        let top =f1();
+        let pig = document.createElement("div");
+        pig.style.cssText = `
+             width:20px;
+             height:20px;
+             border-radius:50%;
+             background:red;
+             position: absolute;
+             left:50%;
+             top:50%;
+             opacity:0;
+       `;
+        document.body.appendChild(pig);
+        let cow= setTimeout(function () {
+            pig.style.transitionDelay = i * 100 + 'ms';
+            pig.style.left = (600 - Math.sin(1 / 45) * 300) + Math.sin(left / 45) * 300 -320+ 'px';
+            pig.style.top = (600 - Math.cos(1 / 45) * 300) + Math.cos(left / 45) * 300 -50+ 'px';
+            pig.style.opacity = `1`;
+            clearInterval(cow);
+        }, 100);
+    }
+
+    function f() {
+        let maxW =document.body.offsetWidth;
+        let out =maxW-100;
+        let w = Math.floor(Math.random() * out);
+        return w;
+    }
+    function f1() {
+        let maxH =document.body.offsetHeight;
+        let out =maxH-100;
+        let h = Math.floor(Math.random() * out);
+        return h;
+
+    }
+</script>
+</body>
+</html>

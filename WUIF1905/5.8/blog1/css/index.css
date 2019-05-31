@@ -201,7 +201,7 @@ ul.list{
     padding: 5px 5px;
     background-color: #fff;
     border-radius: 50%;
-
+    transition: all 0.2s;
 }
 
 .pagination li:hover{
@@ -487,18 +487,20 @@ ul.list{
     border: 1px solid transparent;
 }
 
-.category_content li:first-child{
+/*.category_content li:first-child{*/
+/*    height: 80px;*/
+/*    background-color: rgba(21,25,26,0.1);*/
+/*    border-bottom: 1px solid transparent;*/
+/*}*/
+
+.category_content  .open{
     height: 80px;
     background-color: rgba(21,25,26,0.1);
     border-bottom: 1px solid transparent;
 }
 
-.category_content li:hover {
-    height: 80px;
-    background-color: rgba(21,25,26,0.1);
-    border-bottom: 1px solid transparent;
-}
-.category_content li:hover h4{
+
+.open h4{
     color: #000;
 }
 .category_content ul{

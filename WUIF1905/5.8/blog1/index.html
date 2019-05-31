@@ -86,13 +86,13 @@
     <div class = "left_lb">
         <div class="container">
             <div class="wrapper">
-                <div class="lb_img"><a href="#"><img src="./images/lb_01.jpg" alt="轮播图片01"></a></div>
+                <div style="z-index: 4" class="lb_img"><a href="#"><img src="./images/lb_01.jpg" alt="轮播图片01"></a></div>
                 <div class="lb_img"><a href="#"><img src="./images/lb_02.jpg" alt="轮播图片02"></a></div>
                 <div class="lb_img"><a href="#"><img src="./images/lb_03.jpg" alt="轮播图片03"></a></div>
                 <div class="lb_img"><a href="#"><img src="./images/lb_04.jpg" alt="轮播图片04"></a></div>
             </div>
             <!-- Add Pagination -->
-            <div class="pagination">
+            <div style="z-index: 9" class="pagination">
                 <ul>
                     <li></li>
                     <li></li>
@@ -101,8 +101,8 @@
                 </ul>
             </div>
             <!-- Add Arrows -->
-            <div class="button-next"></div>
-            <div class="button-prev"></div>
+            <div style="z-index: 10" class="button-next"></div>
+            <div style="z-index: 10" class="button-prev"></div>
         </div>
 
 
@@ -164,7 +164,8 @@
 <div class = "diary">
     <div class = "category">
         <div class = "category_title">
-            <ul>
+            <ul class="category_title_ul">
+
                 <li>个人博客日记</li>
                 <li>CSS3|Html5</li>
                 <li>网站建设</li>
@@ -177,7 +178,7 @@
         <div class = "bottom_line"></div>
         <div  class = "category_content">
             <ul>
-            <li class = "hot">
+            <li class = "open">
                 <h4>安静地做一个爱设计的女子</h4>
                 <p>自从入了这行，很多人跟我说可以做网络教程，我也有考虑，但最终没有实现，因为我觉得在这个教程泛滥的时代，直接做一套免费的原创个人博客模板更为实在。每当看到自己喜欢的配色图片</p>
             </li>
@@ -735,6 +736,7 @@
     </a>
 </div>
 <!--页脚内容结束-->
+<script src = "./js/index.js"></script>
 
 </body>
 </html>
