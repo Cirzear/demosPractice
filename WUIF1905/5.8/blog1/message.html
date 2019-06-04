@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/abm.css">
     <link rel="stylesheet" href="./css/message.css">
+
     <script src = "./js/jquery-3.4.1.min.js"></script>
     <script>
         $(function(){
@@ -94,7 +95,7 @@
         <div class = "message_content">
             <h2>来说点什么吧...</h2>
             <form action="">
-                您的姓名：<input class = "want_to_say" type="text">*<br>
+                您的姓名：<input class = "want_to_say" name = "name" type="text">*<br>
                 选择头像：*
                 <div class ="tx_tab">
                 <img src="./images/tx1.jpg" alt="1024">
@@ -106,7 +107,9 @@
                 <img src="./images/tx7.jpg" alt="1024">
                 <img src="./images/tx8.jpg" alt="1024">
                 </div>
-                留言内容：<br><textarea name="" id="message_textarea" cols="30" rows="10"></textarea>
+                留言内容：<span  style="opacity: 0.7;">已写<span  style="opacity: 0.7;" id = "written">0</span>字，还可以再写 <span id = "left_to_write" style="opacity: 0.7;">150</span>字</span>
+                <br>
+                <textarea name="" id="message_textarea" cols="30" rows="10"></textarea>
                 <input class = "submit_button" type="submit" value = "提交">
 
 
@@ -167,6 +170,6 @@
         <div class="top"></div>
     </a>
 </div>
-
+<script src = "./js/message.js"></script>
 </body>
 </html>

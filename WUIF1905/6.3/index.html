@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<span>这是span</span>
+<ul id = "myList">
+    <li>b</li>
+    <li>c</li>
+</ul>
+<div class = "box">
+    <p>我应该在中间</p>
+</div>
+<p>这是p</p>
+
+<script>
+    // window.onload = function(){
+    // var newItem=document.createElement("li")
+    // var textnode=document.createTextNode("a")
+    // newItem.appendChild(textnode)
+    //
+    // var list=document.getElementById("myList")
+    // list.insertBefore(newItem,list.firstChild);
+    // }
+
+
+    HTMLElement.prototype.prepend = function (element) {
+        let first_child = this.firstElementChild;
+        if(first_child){
+            this.insertBefore(element,first_child)
+        }else {
+            this.appendChild(element)
+        }
+        return this;
+
+    };
+
+    HTMLElement.prototype.prependTo = function (element) {
+        element.prepend(this);
+    };
+
+    HTMLElement.prototype.after = function(element){
+        let next = this.nextElementSibling;
+        let parent = this.parentElement;
+        if(next){
+            parent.insertBefore(element,next);
+        }else{
+            parent.appendChild(element);
+        }
+        console.log(parent);
+    }
+
+
+    let box = document.querySelector('.box');
+    let p = document.createElement('p');
+    p.innerText = 'new p'
+    let p1 = document.createElement('p');
+    p1.innerText = "new p1"
+    let h1 = document.createElement('h1')
+    h1.innerText = "这是h1"
+
+
+    box.prepend(p).after(p1)
+    h1.prependTo(box);
+</script>
+</body>
+</html>
