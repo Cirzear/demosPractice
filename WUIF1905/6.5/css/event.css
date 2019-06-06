@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 600px;
+    height: 600px;
+    background: #FFFFFF;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 100px;
+    margin: auto;
+}
+li{
+    width: 39px;
+    height: 39px;
+    background: #1C2327;
+}

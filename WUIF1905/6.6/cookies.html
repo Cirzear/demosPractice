@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>cookie</title>
+</head>
+<body>
+
+<script>
+    let date = new Date();
+    date.setDate(date.getDate()+7);
+    document.cookie = "name = zhjangsanm";
+    document.cookie = "age = 18";
+    document.cookie = "sex = nan;expires ="+date.toUTCString();
+
+    console.log(document.cookie);
+
+    function getCookie(key) {
+        let cookie = document.cookie;
+        let arr = cookie.split(";");
+        let value = "";
+
+        arr.forEach(ele=>{
+            let [keys,values] = ele.split('=');
+
+            keys == key && (value = values);
+        })
+        return value;
+    }
+
+</script>
+</body>
+</html>

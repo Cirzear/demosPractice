@@ -10,7 +10,7 @@ header{
 }
 header p{
     position: absolute;
-    top: 50px;
+
     right: 0;
     left: 0;
     margin: auto;
@@ -68,7 +68,6 @@ li.hot:nth-child(3)~ .top1{
     right: 0;
     left: 0;
     margin: auto;
-
 }
 .content li{
     padding: 10px;
@@ -78,4 +77,35 @@ li.hot:nth-child(3)~ .top1{
 }
 .content time{
     float: right;
+}
+.content del{
+    margin-left: 20px;
+    float: right;
+    text-decoration: none;
+}
+.content del:hover{
+    cursor: pointer;
+}
+
+form{
+    position: relative;
+    top: 30px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+}
+
+.input_text{
+    width: 400px;
+    height: 36px;
+    padding: 0 0 0 10px;
+    outline: none;
+}
+.submit_button{
+    height: 40px;
+    width: 80px;
+    background: transparent;
+    border: 1px solid #666666;
+    outline: none;
 }

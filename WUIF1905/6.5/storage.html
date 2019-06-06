@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>storage</title>
+</head>
+<body>
+
+
+<script>
+    localStorage.setItem('name','zhansgan')
+    localStorage.setItem('age','15');
+    localStorage.sex = 'man';
+    console.log(localStorage.getItem('name'), localStorage.name);
+    let todolist = "[{id:1,name:'zjamhasan'},{id:2,name:'ksir'}]";
+    localStorage.todolist = JSON.stringify(todolist)
+    todolist = JSON.parse(todolist)
+    console.log(todolist);
+</script>
+</body>
+</html>
