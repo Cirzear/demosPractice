@@ -1,6 +1,6 @@
 # cirzear
 
-### 博客页面：
+### 博客页面：（已完结）
 
 + <https://cirzear.github.io/wuif1905_practice_for_teacher_check/WUIF1905/5.8/blog1>
 
