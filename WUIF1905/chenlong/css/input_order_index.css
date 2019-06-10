@@ -1,0 +1,74 @@
+body{
+    margin-bottom: 2rem;
+}
+.goods{
+    margin-top: unset;
+    margin-bottom: 0.2rem;
+}
+.add_and_reduce{
+    margin-top: unset;
+}
+.good_price{
+    color: #fbb548;
+    margin-bottom: 0.2rem;
+}
+.dj{
+    margin-bottom: unset;
+}
+.select_address{
+    width: 96%;
+    height: auto;
+    position: relative;
+    right: 0;
+    left: 0;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+}
+.select_address  span{
+    font-weight: bold;
+    font-size: 0.26rem;
+    color: rgba(0,0,0,0.5);
+    align-items: center;
+}
+.select_address .little{
+    font-size: 0.22rem;
+}
+.right_j span{
+    font-size: 0.22rem;
+    color: rgba(0,0,0,0.5);
+}
+.right_j .icon-youjiantou{
+    font-size: 0.4rem;
+}
+.right_j .little{
+    font-size: 0.22rem;
+}
+.message_content{
+    height: 1.27rem;
+}
+.message_content_in{
+    height: 1.27rem;
+}
+.add_and_reduce_right{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    left: 3.6rem;
+    top: -0.5rem;
+}
+.add_and_reduce_right img{
+    width: 1.18rem;
+    height: 0.52rem;
+}
+.mount{
+    width: 0.4rem;
+    outline: none;
+    border: 0;
+    font-weight: bold;
+    font-size: 0.26rem;
+    color: #36a8fe;
+}
