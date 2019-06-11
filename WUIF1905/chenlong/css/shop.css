@@ -23,14 +23,13 @@
 }
 .zixun{
     bottom: 0;
-    margin-left: 3.8rem;
-    width: 1rem;
+    float: right;
     color: #FFFFFF;
     font-weight: bold;
     font-size: 0.2rem;
+    width: 1.4rem;
     height: 0.32rem;
     padding: 0.1rem 0.2rem;
-    margin-top: 0.3rem;
     text-align: center;
     background-color: rgba(59,172,254,1);
     border-radius: 0.26rem;
