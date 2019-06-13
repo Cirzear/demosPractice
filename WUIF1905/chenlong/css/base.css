@@ -8,12 +8,12 @@ body,h1,h2,h3,h4,h5,h6,table,p,form,input,textarea,ol,ul,li{
 }
 body{
     margin-top: 2rem;
-    overflow-x:hidden;
 }
 /*去除浏览器自带格式*/
 a{
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     text-decoration: none;
+    color: rgba(0,0,0,0.8);
 }
 a:hover{
     cursor: pointer;

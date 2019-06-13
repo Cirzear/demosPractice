@@ -21,7 +21,6 @@ body{
     justify-content: space-between;
 }
 .good_img{
-    width: 100%;
     padding: 1.7rem 1.7rem;
 }
 .good_img img{
@@ -43,7 +42,6 @@ body{
     height: 0.55rem;
     font-size: 0.22rem;
     font-weight: bold;
-
     line-height: 0.32rem;
     letter-spacing: 0.01rem;
     color: rgba(0,0,0,0.5);
@@ -70,7 +68,11 @@ body{
 .goods_tags .spans{
     height: 0.4rem;
     float: right;
-    margin-right: -0.3rem;
+    /*margin-right: -0.3rem;
+
+        原来这才是造成页面左右滑动的罪魁祸首，注释一下作为墓志铭
+
+    */
 }
 .goods_tags span{
     display: inline-block;
@@ -365,7 +367,7 @@ body{
 .goods_information{
     width: 3.01rem;
     height: 3.62rem;
-    padding: 0.3rem 2.24rem;
+    padding: 0.3rem 2rem;
 }
 .like_same{
     width: 100%;
@@ -380,6 +382,7 @@ body{
     justify-content: space-around;
 }
 .like_same li{
+    width: 2.2rem;
     height: 2.43rem;
     display: flex;
     padding: 0.1rem 0;
@@ -455,4 +458,7 @@ body{
 .lxsj{
     font-size: 0.2rem;
     color: #2ed977;
+}
+.like_same a{
+    width: unset;
 }
