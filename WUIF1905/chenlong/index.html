@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/top.css">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/swiper.css">
+    <script src="./js/swiper.js"></script>
 </head>
 <body>
     <div class = "top">
@@ -30,15 +32,30 @@
             </a>
         </div>
         <div class="banner">
-            <a href="classify.html">
-            <img src="./images/part1/banner.png" alt="1024">
-            </a>
-                <div class="bottom_dot">
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
+            <div class="swiper-container">
+                 <div class="swiper-wrapper">
+                     <div class="swiper-slide">
+                         <a href="classify.html">
+                             <img src="./images/part1/banner.png" alt="1024">
+                         </a>
+                     </div>
+                     <div class="swiper-slide">
+                         <a href="classify.html">
+                             <img src="./images/part1/banner.png" alt="1024">
+                         </a>
+                     </div>
+                     <div class="swiper-slide">
+                         <a href="classify.html">
+                             <img src="./images/part1/banner.png" alt="1024">
+                         </a>
+                     </div>
+
+                 </div>
+                <div class="swiper-pagination">
+
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
         </div>
     </div>
@@ -82,5 +99,21 @@
         </a>
     </ul>
 </div>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+
 </body>
 </html>

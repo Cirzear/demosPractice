@@ -382,7 +382,6 @@ body{
     justify-content: space-around;
 }
 .like_same li{
-    width: 2.2rem;
     height: 2.43rem;
     display: flex;
     padding: 0.1rem 0;

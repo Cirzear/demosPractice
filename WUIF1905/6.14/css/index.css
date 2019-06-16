@@ -173,10 +173,6 @@ ul.list{
     left: 616px;
     top: 0;
 }
-.left_lb .wrapper .lb_img:first-child{
-    left: 0;
-}
-
 
 .left_lb .lb_img img{
     width: 616px;
@@ -211,8 +207,7 @@ ul.list{
     transition: all 0.2s;
 }
 
-.pagination li:hover{
-
+.pagination .point{
     background-color: #007aff;
     transition: all 0.5s;
 }
