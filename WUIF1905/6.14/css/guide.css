@@ -1,0 +1,30 @@
+.manager_says{
+    width: 1160px;
+    height: 20px;
+    float: right;
+    position: absolute;
+    top: 36px;
+    left: 663px;
+}
+.manager_says_down{
+    width: 1120px;
+    height: auto;
+
+}
+.manager_says_down a{
+    display: inline-block;
+    width: auto;
+    height: 30px;
+    color: #000;
+    padding: 0 10px 0 10px;
+    margin-top: 10px;
+    line-height: 1.8;
+    border: 1px solid #E9EAED;
+    transition: all 0.5s;
+    background-color: #FFFFFF;
+}
+.manager_says_down a:hover{
+    cursor: pointer;
+    color: #FFFFFF;
+    background: #000000;
+}

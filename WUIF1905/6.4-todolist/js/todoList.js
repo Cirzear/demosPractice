@@ -60,6 +60,19 @@ window.addEventListener('load',function () {
 
         return arr;
     }
+
+// e.triggerHandler(type,[data]) //预点击看
+//     这个特别的方法将会触发指定的事件类型上所有绑定的处理函数。但不会执行浏览器默认动作，也不会产生事件冒泡。
+//
+// 这个方法的行为表现与trigger类似，但有以下三个主要区别：
+//
+// * 第一，他不会触发浏览器默认事件。
+//
+// * 第二，只触发jQuery对象集合中第一个元素的事件处理函数。
+//
+// * 第三，这个方法的返回的是事件处理函数的返回值，而不是据有可链性的jQuery对象。此外，如果最开始的jQuery对象集合为空，则这个方法返回 undefined
+//
+
     //////////////////////////添加///////////////////////////////////
     let forms = document.forms[0];
     let input_content = forms.elements['content'];

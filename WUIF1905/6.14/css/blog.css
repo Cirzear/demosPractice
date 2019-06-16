@@ -1,0 +1,145 @@
+@import url(index.css);
+
+.body_tab{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.tab{
+    background-color: #fff;
+    float: left;
+    padding: 20px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.toper{
+    position: relative;
+    margin-top:20px;
+    width: 860px;
+    height: 140px;
+    float: left;
+    right: 0;
+    padding: 20px;
+    background-color: #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.top_content{
+    width: 100%;
+    height: 100%;
+    float: left;
+    background-color: #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.top_content img{
+    width: 132px;
+    height: 100px;
+    padding: 10px;
+
+}
+.top_content_right{
+    width: 686px;
+    height: 60px;
+    float: right;
+    padding: 10px;
+}
+.top_content_right h2{
+    margin-bottom: 20px;
+}
+.right_content{
+    position: relative;
+    width: 280px;
+    height: auto;
+    top: -180px;
+    float: right;
+}
+.my_recommend{
+    width: 240px;
+    margin-top: 20px;
+    position: relative;
+    background-color: #fff;
+    padding: 20px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+    float: right;
+}
+.img_tab, .trans_div{
+    width: 220px!important;
+}
+
+.my_recommend_content{
+    width: 230px;
+    height: 100%;
+
+}
+.my_recommend_content_down img{
+    width: 62px;
+    height: 62px;
+    padding: 10px 0 0 ;
+    margin-top: 20px;
+    float: left;
+}
+.my_recommend_content_down p{
+    width: 158px;
+    height: 52px;
+    padding: 0 10px 10px 0 ;
+    margin-top: 30px;
+    float: left;
+    line-height: 30px;
+    text-align: center;
+}
+.my_recommend_content_down:hover p{
+    background-color: rgba(128,121,129,0.62);
+}
+.tag_cloud{
+    width: 240px;
+    margin-top: 20px;
+    position: relative;
+    background-color: #fff;
+    padding: 20px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+    float: right;
+}
+.tag_cloud a{
+    width: auto;
+    height: 24px;
+    display: block;
+    background: #999;
+    float: left;
+    padding: 3px 10px;
+    margin: 10px 5px 0 0;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    color: #FFF;
+}
+.tag_cloud a:first-child{
+    background: #036564;
+}
+.tag_cloud a:nth-child(2n){
+    background: #8A9B0F;
+}
+.tag_cloud a:nth-child(2n+1){
+    background-color: #C40000;
+}
+
+.tag_cloud a:hover{
+    color: #fff;
+    text-shadow: #000 1px 1px 1px
+}
+.footer{
+    clear: both; /* 清除浮动元素格式 */
+    position: relative;
+}

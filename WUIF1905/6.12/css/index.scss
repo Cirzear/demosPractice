@@ -1,0 +1,11 @@
+@import 'a.scss';
+@import "mixin";
+
+body{
+  background: $color;
+  border: 1px solid $deepred;
+}
+.box{
+  @include center;
+}
+‭‭‭‭‭‭‭‭　　　　
