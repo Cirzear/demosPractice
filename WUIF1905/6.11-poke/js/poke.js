@@ -144,7 +144,7 @@ $(function () {
 
     let m = 0;
     $('.rightBtn').on('click',function () {
-        $('.left').last().css('zIndex',m++).animate({left:710},function () {
+        $('.left').last().css('zIndex',m++).animate({left:860},function () {
             $(this).removeClass('left').addClass('right')
         })
     })

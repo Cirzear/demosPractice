@@ -18,9 +18,9 @@
         .box{
             width: 800px;
             height: 600px;
-            position: absolute;
+            position: relative;
             left: 0;
-            top: 360px;
+            top: 240px;
             right: 0;
             bottom: 0;
             margin: auto;
@@ -31,6 +31,12 @@
             top: -300px;
             right: -400px;
             opacity: 0.5;
+        }
+        .rules{
+            position: relative;
+            left: 500px;
+            top: 30px;
+            color: #FFFFFF;
         }
         .poke{
             width: 90px;
@@ -62,6 +68,10 @@
     </style>
 </head>
 <body>
+<div class="rules">
+    <h2>游戏规则</h2>
+    <p>两张牌合计大于10即可</p>
+</div>
     <div class="box">
         <img class = "logo" src="./img/aomen.gif" alt="">
         <button class="leftBtn">
