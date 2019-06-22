@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        .map{
+            position: relative;
+            right: 0;
+            left: 0;
+            top: 100px;
+            margin: auto;
+            width: 1200px;
+            height: 600px;
+            background: #adadad;
+        }
+    </style>
+</head>
+<body>
+<div class="map">
+
+</div>
+
+<script src="../npmInstall/node_modules/echarts/dist/echarts.common.js"></script>
+<script src="js/data.js"></script>
+<script>
+
+    var myChart = echarts.init(document.getElementsByClassName('map')[0]);
+
+    // 指定图表的配置项和数据
+    var option = {
+        backgroundColor: '#2c343c',
+        title : {
+            textStyle:{
+                color:'#fff'
+            },
+            text: '豆瓣Top250',
+            x:'center',
+            color:'#fff'
+        },
+        tooltip : {
+            trigger: 'item',
+            formatter: "{a} <br/>{b} : {c} ({d}%)"
+        },
+        legend: {
+            orient: 'vertical',
+            left: 'left',
+            data: [],
+            textStyle:{
+                color:'#fff'
+            }
+
+        },
+        series : [
+            {
+                name: '分类',
+                type: 'pie',
+                radius : '55%',
+                center: ['50%', '60%'],
+                data:[],
+                itemStyle: {
+                    emphasis: {
+                        shadowBlur: 10,
+                        shadowOffsetX: 0,
+                        shadowColor: 'rgba(0, 0, 0, 0.5)'
+                    }
+                }
+            }
+        ]
+    };
+
+    let arr = [];
+    for(let i =1;i < categories.length;i++){
+
+        let name = categories[i];
+        option.legend.data.push(name);
+        let value = data.filter(ele=>ele[4].includes(name)).length;
+        arr.push({name,value});
+
+    }
+
+
+    option.series[0].data = arr;
+
+    // 使用刚指定的配置项和数据显示图表。
+    myChart.setOption(option);
+</script>
+
+</body>
+</html>

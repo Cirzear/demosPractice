@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        .map{
+            position: relative;
+            right: 0;
+            left: 0;
+            top: 100px;
+            margin: auto;
+            width: 1200px;
+            height: 600px;
+            background: #adadad;
+        }
+    </style>
+</head>
+<body>
+<div class="map">
+
+</div>
+
+<script src="../npmInstall/node_modules/echarts/dist/echarts.common.js"></script>
+<script src="js/data.js"></script>
+
+<script>
+    let map = document.querySelector('.map');
+
+    let myChart = echarts.init(map);
+
+    let selected = {};
+
+    let series = [];
+
+    let names = [];
+
+    categories.forEach(category=>{
+
+        let movies = data.filter(ele=>ele[4].includes(category));
+
+
+
+        if(category == "全部"){
+            selected[category] = true;
+        }else {
+            selected[category] = false;
+        }
+
+        let obj = {
+          name: category,
+          data: category =='全部' ? data : movies,
+          type :'scatter',
+          symbolSize: function (data) {
+              return Math.ceil(data[2] / 10);  //
+          },
+            label: {
+                emphasis: {
+                    show: true,
+                    formatter: function (param) {
+                        return param.data[3];
+                    },
+                    position: 'top'
+                }
+            },
+            itemStyle: {
+                normal: {
+                    shadowBlur: 10,
+                    shadowColor: 'rgba(120, 36, 50, 0.5)',
+                    shadowOffsetY: 5,
+                    color: new echarts.graphic.RadialGradient(0.4, 0.3, 1, [{
+                        offset: 0,
+                        color: 'rgb(251, 118, 123)'
+                    }, {
+                        offset: 1,
+                        color: 'rgb(204, 46, 72)'
+                    }])
+                }
+            }
+        };
+        series.push(obj);
+        names.push(obj.name);
+    })
+
+    let option = {
+        backgroundColor: new echarts.graphic.RadialGradient(0.3, 0.3, 0.8, [{
+            offset: 0,
+            color: '#f7f8fa'
+        }, {
+            offset: 1,
+            color: '#cdd0d5'
+        }]),
+        tooltip : {
+            trigger: 'item',
+            formatter: function (param) {
+                let data = param.data
+                return `
+                    名字：${data[3]}<br/>
+                    类型：${data[4]}<br/>
+                    时长：${data[2]}
+                `
+            }
+        },
+        title: {
+            text: '豆瓣Top250',
+            x:'center',
+            bottom:10
+        },
+        legend: {
+            type: 'scroll',
+            orient: 'vertical',
+            textStyle:{
+              color:'#c40000',
+              inactiveColor:'black'
+            },
+            left: 10,
+            top: 20,
+            bottom: 20,
+            data: [],
+            selectedMode:'single',
+            selected:selected
+        },
+        xAxis: {
+            name:'评论次数',
+            splitLine: {
+                lineStyle: {
+                    type: 'dashed'
+                }
+            }
+        },
+        yAxis: {
+            name:'评分',
+            splitLine: {
+                lineStyle: {
+                    type: 'dashed'
+                }
+            },
+            scale: true
+        },
+
+
+    }
+
+    option.legend.data = name;
+    option.series = series;
+    myChart.setOption(option);
+
+
+</script>
+
+</body>
+</html>
